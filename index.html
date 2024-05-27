@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCircle - Connect with Africa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1em 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #00ff00;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 5px;
+        }
+        form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: white;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #333;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .post {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .post img {
+            max-width: 100%;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .ad {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to VibeCircle</h1>
+        <p>Your social network to connect with Africa</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#signup">Sign Up</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>VibeCircle is a social networking platform designed to connect people across Africa. Our mission is to bring together individuals, communities, and businesses, fostering a sense of unity and collaboration throughout the continent.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Connect with friends and family</li>
+                <li>Share updates, photos, and videos</li>
+                <li>Join and create groups for your interests</li>
+                <li>Discover events happening around you</li>
+                <li>Support local businesses and initiatives</li>
+                <li>Chat with friends</li>
+                <li>Like and comment on posts</li>
+                <li>Track friends' locations (with permission)</li>
+                <li>Flirting feature</li>
+                <li>Post videos</li>
+                <li>Reject friend requests</li>
+                <li>Block users</li>
+                <li>Request a date with a friend</li>
+            </ul>
+        </section>
+        <section id="signup">
+            <h2>Create an Account</h2>
+            <form action="#" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section id="user-profile">
+            <h2>Your Profile</h2>
+            <div class="profile">
+                <img src="default-profile.png" alt="Profile Picture" width="100">
+                <div class="profile-info">
+                    <h3>Username</h3>
+                    <p>Email: user@example.com</p>
+                    <button>Upload New Picture</button>
+                </div>
+            </div>
+            <button style="background-color: #00ff00;">Add Friend</button>
+            <button>Track Location</button>
+            <button>Flirt</button>
+            <button>Request Date</button>
+            <button style="background-color: #ff0000;">Block</button>
+        </section>
+        <section id="posts">
+            <h2>Recent Posts</h2>
+            <div class="post">
+                <p><strong>Username</strong>: Just had an amazing day!</p>
+                <img src="sample-photo.jpg" alt="Post Image">
+                <div class="post-actions">
+                    <button style="background-color: #00ff00;">Like</button>
+                    <button>Comment</button>
+                </div>
+                <div class="comments">
+                    <p><strong>Friend</strong>: That's awesome!</p>
+                </div>
+            </div>
+            <div class="post">
+                <p><strong>Username</strong>: Check out this video!</p>
+                <video controls width="100%">
+                    <source src="sample-video.mp4" type="video/mp4">
+                </video>
+                <div class="post-actions">
+                    <button style="background-color: #00ff00;">Like</button>
+                    <button>Comment</button>
+                </div>
+            </div>
+        </section>
+        <section id="advertisements">
+            <h2>Advertisements</h2>
+            <div class="ad">
+                <p><strong>Ad Title</strong></p>
+                <p>Ad content goes here...</p>
+            </div>
+            <div class="ad">
+                <p><strong>Ad Title</strong></p>
+                <p>Ad content goes here...</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us:</p>
+            <p>Email: support@vibecircle.africa</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Vibe Street, Nairobi, Kenya</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 VibeCircle. All rights reserved.</p>
+    </footer>
+</body>
+</html>
